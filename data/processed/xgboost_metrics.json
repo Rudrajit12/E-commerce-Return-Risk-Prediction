@@ -1,0 +1,19 @@
+{
+  "threshold": 0.5,
+  "accuracy": 0.6514,
+  "precision": 0.32958500669344043,
+  "recall": 0.5562584726615454,
+  "f1": 0.413920645595158,
+  "roc_auc": 0.6592230460920332,
+  "pr_auc": 0.34994809613750416,
+  "log_loss": 0.6230957508087158,
+  "brier_score": 0.21700525283813477,
+  "true_negative": 5283,
+  "false_positive": 2504,
+  "false_negative": 982,
+  "true_positive": 1231,
+  "positive_rate_actual": 0.2213,
+  "positive_rate_predicted": 0.3735,
+  "scale_pos_weight": 3.7088369172814315,
+  "xgboost_version": "3.4.1"
+}

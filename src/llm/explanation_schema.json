@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "headline": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "key_factors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "factor": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "increases_risk",
+              "reduces_risk"
+            ]
+          },
+          "impact": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "factor",
+          "direction",
+          "impact"
+        ]
+      }
+    },
+    "recommended_action": {
+      "type": "string",
+      "enum": [
+        "INTERVENE",
+        "MONITOR",
+        "NO_ACTION"
+      ]
+    },
+    "business_context": {
+      "type": "string"
+    },
+    "caveat": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "headline",
+    "explanation",
+    "key_factors",
+    "recommended_action",
+    "business_context",
+    "caveat"
+  ]
+}

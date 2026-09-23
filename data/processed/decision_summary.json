@@ -1,0 +1,26 @@
+{
+  "business_assumptions": {
+    "intervention_cost": 100.0,
+    "avoided_return_cost": 800.0,
+    "intervention_effectiveness": 0.6
+  },
+  "test_orders": 10000,
+  "actual_returns": 2213,
+  "actual_return_rate": 0.2213,
+  "recommended_threshold_by_net_benefit": 0.45,
+  "max_net_benefit": 231220.0,
+  "recommended_threshold_by_f1": 0.45,
+  "max_f1": 0.4226954492415403,
+  "decision_at_net_benefit_threshold": {
+    "targeted_orders": 4643,
+    "target_rate": 0.4643,
+    "precision": 0.31208270514753395,
+    "recall": 0.6547672842295527,
+    "expected_prevented_returns": 869.4,
+    "intervention_cost": 464300.0,
+    "avoided_return_cost": 695520.0,
+    "net_benefit": 231220.0,
+    "roi": 0.49799698470816284
+  },
+  "note": "Economic results depend on the assumed intervention effectiveness and avoided return cost. These assumptions are not causal estimates and should be validated experimentally."
+}

@@ -1,0 +1,34 @@
+feature,importance,importance_share
+category_Fashion,0.16358908,0.16358909
+product_historical_return_rate,0.08624722,0.08624723
+category_Footwear,0.06827485,0.068274856
+customer_return_rate,0.06528609,0.0652861
+customer_previous_returns,0.05920484,0.059204847
+payment_type_COD,0.033096496,0.0330965
+price_bucket_Luxury,0.031563275,0.03156328
+category_Home & Kitchen,0.028339986,0.02833999
+product_rating,0.023917133,0.023917137
+discount_bucket_Low,0.023136266,0.023136267
+discount_pct,0.022804113,0.022804115
+category_Sports,0.021445813,0.021445815
+price_bucket_Premium,0.020923141,0.020923143
+payment_type_Wallet,0.02048167,0.020481672
+quantity,0.020295825,0.020295827
+delivery_distance_km,0.019696498,0.0196965
+payment_type_Debit Card,0.019660555,0.019660557
+category_Books,0.018907392,0.018907394
+product_price,0.018295709,0.01829571
+category_Beauty,0.01820326,0.018203262
+category_Electronics,0.017798383,0.017798385
+payment_type_UPI,0.017613849,0.01761385
+discount_bucket_Medium,0.017568527,0.017568529
+payment_type_Credit Card,0.0175524,0.017552402
+customer_age,0.01752495,0.017524952
+discount_bucket_Very High,0.017351795,0.017351797
+order_month,0.01712604,0.017126042
+customer_previous_orders,0.016930314,0.016930316
+order_day_of_week,0.016476376,0.016476378
+discount_bucket_High,0.016265158,0.01626516
+expected_delivery_days,0.015660733,0.015660735
+price_bucket_Budget,0.0154278,0.015427802
+price_bucket_Mid,0.0133344075,0.013334409

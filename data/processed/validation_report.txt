@@ -1,0 +1,16 @@
+E-COMMERCE RETURN DATASET VALIDATION REPORT
+================================================
+Rows: 40,000
+Columns: 22
+Duplicate order IDs: 0
+Total missing cells: 1,035
+Return rate: 21.46%
+Validation status: PASS
+
+Missing values:
+  product_rating: 462 (1.16%)
+  delivery_distance_km: 328 (0.82%)
+  discount_pct: 245 (0.61%)
+
+Errors:
+  None

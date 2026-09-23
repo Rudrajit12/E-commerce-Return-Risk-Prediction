@@ -1,0 +1,17 @@
+{
+  "threshold": 0.5,
+  "accuracy": 0.779,
+  "precision": 0.5069124423963134,
+  "recall": 0.04970628106642567,
+  "f1": 0.09053497942386832,
+  "roc_auc": 0.6720595943823087,
+  "pr_auc": 0.3610468750182937,
+  "log_loss": 0.49763040756215415,
+  "brier_score": 0.16144831501091297,
+  "true_negative": 7680,
+  "false_positive": 107,
+  "false_negative": 2103,
+  "true_positive": 110,
+  "positive_rate_actual": 0.2213,
+  "positive_rate_predicted": 0.0217
+}

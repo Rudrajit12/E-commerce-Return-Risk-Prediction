@@ -1,0 +1,16 @@
+High return risk: 68.8% — proactive intervention recommended.
+
+The model estimates a 68.8% probability of return and classifies the order as high risk. The main model-attribution signals increasing risk are customer, product, customer. The decision engine recommends INTERVENE based on the frozen policy.
+
+Key factors:
+- customer: increases_risk — SHAP contribution +0.877 log-odds.
+- product: increases_risk — SHAP contribution +0.406 log-odds.
+- customer: increases_risk — SHAP contribution +0.285 log-odds.
+- payment: reduces_risk — SHAP contribution -0.120 log-odds.
+- discount: reduces_risk — SHAP contribution -0.109 log-odds.
+
+Recommended action: INTERVENE
+
+Expected avoided return cost is ₹330.25 against an intervention cost of ₹100.00, giving an estimated net value of ₹230.25 under the stated intervention-effectiveness assumption.
+
+Caveat: SHAP describes model behavior, not causality. Expected economics use an assumed intervention effectiveness and should be validated with intervention or experiment data.

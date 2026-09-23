@@ -1,0 +1,296 @@
+{
+  "step": 10,
+  "purpose": "Explain the selected production return-risk model.",
+  "model": "models/model_selection/logistic_regression.joblib",
+  "model_type": "Logistic Regression",
+  "threshold": 0.21,
+  "background_size": 1000,
+  "explanation_sample_size": 2000,
+  "random_state": 42,
+  "shap_version": "0.52.0",
+  "explanation_space": "log_odds",
+  "expected_log_odds": -1.3390806003681295,
+  "expected_probability": 0.20766129415162793,
+  "max_additivity_error": 8.881784197001252e-16,
+  "selected_order": {
+    "order_id": "O031068",
+    "actual_returned": 0,
+    "predicted_probability": 0.6880237571029495,
+    "predicted_return": 1,
+    "above_threshold": true
+  },
+  "top_global_features": [
+    {
+      "feature": "customer_return_rate",
+      "mean_abs_shap_log_odds": 0.25564046121854617,
+      "mean_shap_log_odds": 0.02648441687589511,
+      "rank": 1
+    },
+    {
+      "feature": "product_historical_return_rate",
+      "mean_abs_shap_log_odds": 0.1615149422508039,
+      "mean_shap_log_odds": -0.03075170362067267,
+      "rank": 2
+    },
+    {
+      "feature": "category_Fashion",
+      "mean_abs_shap_log_odds": 0.1491581198673219,
+      "mean_shap_log_odds": -0.024954752367860246,
+      "rank": 3
+    },
+    {
+      "feature": "product_rating",
+      "mean_abs_shap_log_odds": 0.12031480449611456,
+      "mean_shap_log_odds": 0.0031191509065667607,
+      "rank": 4
+    },
+    {
+      "feature": "category_Footwear",
+      "mean_abs_shap_log_odds": 0.10973380672545324,
+      "mean_shap_log_odds": -0.013558927972041227,
+      "rank": 5
+    },
+    {
+      "feature": "discount_bucket_Low",
+      "mean_abs_shap_log_odds": 0.10336739874623449,
+      "mean_shap_log_odds": -0.0007058686065708439,
+      "rank": 6
+    },
+    {
+      "feature": "price_bucket_Mid",
+      "mean_abs_shap_log_odds": 0.0999568840607436,
+      "mean_shap_log_odds": -0.002426923374734742,
+      "rank": 7
+    },
+    {
+      "feature": "discount_bucket_Medium",
+      "mean_abs_shap_log_odds": 0.09654247510143076,
+      "mean_shap_log_odds": -0.007856709885479684,
+      "rank": 8
+    },
+    {
+      "feature": "payment_type_UPI",
+      "mean_abs_shap_log_odds": 0.09005879837947105,
+      "mean_shap_log_odds": 0.004057050725006114,
+      "rank": 9
+    },
+    {
+      "feature": "discount_pct",
+      "mean_abs_shap_log_odds": 0.08429399167707509,
+      "mean_shap_log_odds": -0.00592756262773588,
+      "rank": 10
+    },
+    {
+      "feature": "delivery_distance_km",
+      "mean_abs_shap_log_odds": 0.07613623563115182,
+      "mean_shap_log_odds": 0.0017067837989660159,
+      "rank": 11
+    },
+    {
+      "feature": "category_Books",
+      "mean_abs_shap_log_odds": 0.07215200677181563,
+      "mean_shap_log_odds": -0.0019832877067568187,
+      "rank": 12
+    },
+    {
+      "feature": "category_Beauty",
+      "mean_abs_shap_log_odds": 0.06961016393036906,
+      "mean_shap_log_odds": -0.019638723463573378,
+      "rank": 13
+    },
+    {
+      "feature": "price_bucket_Budget",
+      "mean_abs_shap_log_odds": 0.06784232006763628,
+      "mean_shap_log_odds": 0.003095561236888002,
+      "rank": 14
+    },
+    {
+      "feature": "category_Home & Kitchen",
+      "mean_abs_shap_log_odds": 0.06688284861172064,
+      "mean_shap_log_odds": -0.011912376836160733,
+      "rank": 15
+    }
+  ],
+  "top_positive_local_contributions": [
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "customer_return_rate",
+      "source_feature": "customer",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.8774959027328999,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.8774959027328999
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "product_historical_return_rate",
+      "source_feature": "product",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.4061899177421829,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.4061899177421829
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "customer_previous_returns",
+      "source_feature": "customer",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.2847718268165138,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.2847718268165138
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "category_Fashion",
+      "source_feature": "category",
+      "feature_value": "Fashion",
+      "shap_value_log_odds": 0.23885262980665511,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.23885262980665511
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "product_rating",
+      "source_feature": "product",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.1454134591115745,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.1454134591115745
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "delivery_distance_km",
+      "source_feature": "delivery",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.13375123508719686,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.13375123508719686
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "price_bucket_Mid",
+      "source_feature": "price",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.08898719040694156,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.08898719040694156
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "discount_bucket_Low",
+      "source_feature": "discount",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.06776338623080017,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.06776338623080017
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "discount_bucket_High",
+      "source_feature": "discount",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.042443334307443285,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.042443334307443285
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "price_bucket_Budget",
+      "source_feature": "price",
+      "feature_value": NaN,
+      "shap_value_log_odds": 0.04209963282167722,
+      "direction": "increases_return_risk",
+      "absolute_shap": 0.04209963282167722
+    }
+  ],
+  "top_negative_local_contributions": [
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "payment_type_UPI",
+      "source_feature": "payment",
+      "feature_value": NaN,
+      "shap_value_log_odds": -0.1197795928335156,
+      "direction": "decreases_return_risk",
+      "absolute_shap": 0.1197795928335156
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "discount_bucket_Medium",
+      "source_feature": "discount",
+      "feature_value": NaN,
+      "shap_value_log_odds": -0.10863598853996799,
+      "direction": "decreases_return_risk",
+      "absolute_shap": 0.10863598853996799
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "price_bucket_Premium",
+      "source_feature": "price",
+      "feature_value": NaN,
+      "shap_value_log_odds": -0.09459115323117796,
+      "direction": "decreases_return_risk",
+      "absolute_shap": 0.09459115323117796
+    },
+    {
+      "order_id": "O031068",
+      "predicted_probability": 0.6880237571029495,
+      "decision_threshold": 0.21,
+      "predicted_return": 1,
+      "feature": "category_Footwear",
+      "source_feature": "category",
+      "feature_value": "Fashion",
+      "shap_value_log_odds": -0.07013238606228439,
+      "direction": "decreases_return_risk",
+      "absolute_shap": 0.07013238606228439
+    }
+  ],
+  "llm_ready_fields": [
+    "order_id",
+    "predicted_probability",
+    "decision_threshold",
+    "feature",
+    "source_feature",
+    "feature_value",
+    "shap_value_log_odds",
+    "direction"
+  ]
+}

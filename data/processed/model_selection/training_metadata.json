@@ -1,0 +1,30 @@
+{
+  "train_rows": 26703,
+  "validation_rows": 3297,
+  "test_rows": 10000,
+  "features": [
+    "product_price",
+    "product_rating",
+    "product_historical_return_rate",
+    "customer_age",
+    "customer_previous_orders",
+    "customer_previous_returns",
+    "customer_return_rate",
+    "quantity",
+    "discount_pct",
+    "delivery_distance_km",
+    "expected_delivery_days",
+    "order_month",
+    "order_day_of_week",
+    "category",
+    "payment_type",
+    "discount_bucket",
+    "price_bucket"
+  ],
+  "models": [
+    "logistic_regression",
+    "xgboost"
+  ],
+  "random_state": 42,
+  "xgboost_scale_pos_weight": 3.6888498683055313
+}

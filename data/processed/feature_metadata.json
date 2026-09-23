@@ -1,0 +1,52 @@
+{
+  "target": "returned",
+  "id_columns": [
+    "order_id",
+    "customer_id",
+    "product_id"
+  ],
+  "numeric_features": [
+    "product_price",
+    "product_rating",
+    "product_historical_return_rate",
+    "customer_age",
+    "customer_previous_orders",
+    "customer_previous_returns",
+    "customer_return_rate",
+    "quantity",
+    "discount_pct",
+    "delivery_distance_km",
+    "expected_delivery_days",
+    "order_month",
+    "order_day_of_week"
+  ],
+  "categorical_features": [
+    "category",
+    "payment_type",
+    "discount_bucket",
+    "price_bucket"
+  ],
+  "model_features": [
+    "product_price",
+    "product_rating",
+    "product_historical_return_rate",
+    "customer_age",
+    "customer_previous_orders",
+    "customer_previous_returns",
+    "customer_return_rate",
+    "quantity",
+    "discount_pct",
+    "delivery_distance_km",
+    "expected_delivery_days",
+    "order_month",
+    "order_day_of_week",
+    "category",
+    "payment_type",
+    "discount_bucket",
+    "price_bucket"
+  ],
+  "prediction_point": "Immediately after order placement",
+  "leakage_policy": "Only information available at order time may be used.",
+  "rows": 40000,
+  "columns": 22
+}

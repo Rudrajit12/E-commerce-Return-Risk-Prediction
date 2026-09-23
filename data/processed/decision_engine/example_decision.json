@@ -1,0 +1,83 @@
+{
+  "order_id": "O031068",
+  "model_prediction": {
+    "return_probability": 0.6880237571029495,
+    "risk_level": "HIGH"
+  },
+  "business_decision": {
+    "recommended_action": "INTERVENE",
+    "expected_avoided_return_cost": 330.2514034094158,
+    "intervention_cost": 100.0,
+    "net_expected_value": 230.2514034094158
+  },
+  "explanation": {
+    "top_risk_increasing_factors": [
+      {
+        "feature": "customer_return_rate",
+        "source_feature": "customer",
+        "feature_value": NaN,
+        "shap_value_log_odds": 0.8774959027328999,
+        "direction": "increases_return_risk"
+      },
+      {
+        "feature": "product_historical_return_rate",
+        "source_feature": "product",
+        "feature_value": NaN,
+        "shap_value_log_odds": 0.4061899177421829,
+        "direction": "increases_return_risk"
+      },
+      {
+        "feature": "customer_previous_returns",
+        "source_feature": "customer",
+        "feature_value": NaN,
+        "shap_value_log_odds": 0.2847718268165138,
+        "direction": "increases_return_risk"
+      },
+      {
+        "feature": "category_Fashion",
+        "source_feature": "category",
+        "feature_value": "Fashion",
+        "shap_value_log_odds": 0.2388526298066551,
+        "direction": "increases_return_risk"
+      },
+      {
+        "feature": "product_rating",
+        "source_feature": "product",
+        "feature_value": NaN,
+        "shap_value_log_odds": 0.1454134591115745,
+        "direction": "increases_return_risk"
+      }
+    ],
+    "top_risk_reducing_factors": [
+      {
+        "feature": "payment_type_UPI",
+        "source_feature": "payment",
+        "feature_value": NaN,
+        "shap_value_log_odds": -0.1197795928335156,
+        "direction": "decreases_return_risk"
+      },
+      {
+        "feature": "discount_bucket_Medium",
+        "source_feature": "discount",
+        "feature_value": NaN,
+        "shap_value_log_odds": -0.1086359885399679,
+        "direction": "decreases_return_risk"
+      },
+      {
+        "feature": "price_bucket_Premium",
+        "source_feature": "price",
+        "feature_value": NaN,
+        "shap_value_log_odds": -0.0945911532311779,
+        "direction": "decreases_return_risk"
+      },
+      {
+        "feature": "category_Footwear",
+        "source_feature": "category",
+        "feature_value": "Fashion",
+        "shap_value_log_odds": -0.0701323860622843,
+        "direction": "decreases_return_risk"
+      }
+    ],
+    "policy_reason": "Return risk is at or above the frozen production threshold; the order is eligible for proactive intervention."
+  }
+}

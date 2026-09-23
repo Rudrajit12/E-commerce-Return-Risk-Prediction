@@ -1,0 +1,44 @@
+STEP 10 — SHAP EXPLAINABILITY REPORT
+==========================================
+Model: Logistic Regression (models/model_selection/logistic_regression.joblib)
+Decision threshold: 0.21
+Explanation sample: 2,000 test orders
+Background sample: 1,000 training orders
+
+Global feature importance (mean absolute SHAP, log-odds):
+   1. customer_return_rate: 0.255640
+   2. product_historical_return_rate: 0.161515
+   3. category_Fashion: 0.149158
+   4. product_rating: 0.120315
+   5. category_Footwear: 0.109734
+   6. discount_bucket_Low: 0.103367
+   7. price_bucket_Mid: 0.099957
+   8. discount_bucket_Medium: 0.096542
+   9. payment_type_UPI: 0.090059
+  10. discount_pct: 0.084294
+
+Selected highest-risk order:
+  Order ID: O031068
+  Actual returned: 0
+  Predicted probability: 68.80%
+  Predicted return at threshold: 1
+
+Top local contributions:
+  customer_return_rate: +0.877496 (increases_return_risk)
+  product_historical_return_rate: +0.406190 (increases_return_risk)
+  customer_previous_returns: +0.284772 (increases_return_risk)
+  category_Fashion: +0.238853 (increases_return_risk)
+  product_rating: +0.145413 (increases_return_risk)
+  delivery_distance_km: +0.133751 (increases_return_risk)
+  payment_type_UPI: -0.119780 (decreases_return_risk)
+  discount_bucket_Medium: -0.108636 (decreases_return_risk)
+  price_bucket_Premium: -0.094591 (decreases_return_risk)
+  price_bucket_Mid: +0.088987 (increases_return_risk)
+  category_Footwear: -0.070132 (decreases_return_risk)
+  discount_bucket_Low: +0.067763 (increases_return_risk)
+  discount_bucket_High: +0.042443 (increases_return_risk)
+  price_bucket_Budget: +0.042100 (increases_return_risk)
+  category_Books: +0.039666 (increases_return_risk)
+
+Interpretation: positive SHAP values increase the model's return-risk log-odds; negative values decrease them. SHAP describes model behavior, not causality.
+Additivity check: maximum absolute error = 8.881784197e-16
