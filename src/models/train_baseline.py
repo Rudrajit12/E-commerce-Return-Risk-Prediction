@@ -29,7 +29,7 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
-from sklearn.compose import ColumnTransformer
+from sklearn.compose import ColumnTransformer  # type: ignore[reportMissingModuleSource]
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
